@@ -24,7 +24,7 @@ return {
                         action = 'Telescope commands',
                         key = 'c',
                     },
-                    { desc = '󰏔 Update', group = '@property', action = 'Lazy update', key = 'u' },
+                    { desc = '󰏔 Sync', group = '@property', action = 'Lazy sync', key = 's' },
                     {
                         desc = '󰏓 Mason',
                         group = 'Number',
