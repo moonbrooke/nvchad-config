@@ -21,3 +21,8 @@ map("n", "<leader>f", function()
     vim.lsp.buf.format({ async = true })
     vim.cmd("write")
 end, { desc = "Format code and save file" })
+
+-- Dismiss nvim-notify notifications
+vim.keymap.set("n", "<leader>d", function()
+    require("notify").dismiss({ silent = true, pending = true })
+end, { desc = "Dismiss nvim-notify notifications" })
