@@ -1,10 +1,13 @@
-# My Custom NVChad Config
+# My Custom NvChad Config
 
 Additional plugins installed:
 
 - [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [luckasRanarison/tailwind-tools.nvim](https://github.com/luckasRanarison/tailwind-tools.nvim)
 - [roobert/tailwindcss-colorizer-cmp.nvim](https://github.com/roobert/tailwindcss-colorizer-cmp.nvim)
+- [folke/noice.nvim](https://github.com/folke/noice.nvim)
+- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim) 
 
 # Original Readme
 
