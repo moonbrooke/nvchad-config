@@ -21,8 +21,14 @@ map("c", "<C-v>", "<C-r>+", { desc = "Paste in command mode" })
 map("n", "\\", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
 
 -- Move block of codes up/down
-map("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move code up" })
-map("v", "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Move code down" })
+-- map("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move code up" })
+-- map("v", "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Move code down" })
+
+-- Duplicate
+map({ "n" }, "<C-S-A-Up>", "<CMD>LineDuplicate -1<CR>", { desc = "Duplicate line up" })
+map({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate +1<CR>", { desc = "Duplicate line down" })
+map({ "v" }, "<C-S-A-Up>", "<CMD>VisualDuplicate -1<CR>", { desc = "Duplicate selection up" })
+map({ "v" }, "<C-S-A-Down>", "<CMD>VisualDuplicate +1<CR>", { desc = "Duplicate selection down" })
 
 -- Format code with LSP
 map("n", "<leader>f", function()
@@ -31,6 +37,6 @@ map("n", "<leader>f", function()
 end, { desc = "Format code and save file" })
 
 -- Dismiss nvim-notify notifications
-vim.keymap.set("n", "<leader>d", function()
+map("n", "<leader>d", function()
     require("notify").dismiss({ silent = true, pending = true })
 end, { desc = "Dismiss nvim-notify notifications" })
