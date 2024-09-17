@@ -1,9 +1,14 @@
 require "nvchad.options"
 
--- add yours here!
-
 local o = vim.o
+local g = vim.g
 -- o.cursorlineopt ='both' -- to enable cursorline!
+
+o.termguicolors = true
+o.cursorline = true
+o.encoding = "UTF-8"
+o.ruler = true
+o.title = true
 
 -- line numbers
 o.number = true
